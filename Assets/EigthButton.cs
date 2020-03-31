@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SecondButton : MonoBehaviour
+public class EigthButton : MonoBehaviour
 {
     public GameObject earLeft_mesh;
     public GameObject earRight_mesh; 
     public GameObject FaceTexture;
     public GameObject fur_mesh;
     public GameObject nose_mesh; 
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +17,7 @@ public class SecondButton : MonoBehaviour
       FaceTexture = GameObject.Find("FaceTexture");
       fur_mesh = GameObject.Find("fur_mesh");
       nose_mesh = GameObject.Find("nose_mesh");
-      //Debug.Log("Hello: " + earLeft_mesh.name);
-      //Debug.Log("Hello: " + earRight_mesh.name);
+
     }
 
     // Update is called once per frame
@@ -33,8 +31,8 @@ public class SecondButton : MonoBehaviour
 	FaceTexture.GetComponent<MeshRenderer>().material = inputmaterial;
 	earLeft_mesh.SetActive(false);
 	earRight_mesh.SetActive(false);
-	//fur_mesh.SetActive(false);
-        //nose_mesh.SetActive(false);
+	fur_mesh.SetActive(false);
+        nose_mesh.SetActive(false);
 
      }	
 }
